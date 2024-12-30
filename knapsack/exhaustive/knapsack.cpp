@@ -4,7 +4,12 @@
     Date: 18 November, 2024
 
     Description & Note:
-        The code works, but you gotta manually input the weights.
+        This program was built with Visual Studio Code.    
+        The code works, but you have to manually input the weights. Depending on what
+        you need to do with this code, you may need to adjust the input or output
+        (i.e. make it read from a file, make an input loop, making it pass the results
+        to another function/file, etc.)
+        
         The focus of this code is on the logic of the actual knapsack solver function, but
         outputting the results was a total pain... even more so than the knapsack algorithm itself...
         This program operates at O(n * 2^n), but will always produce the optimal solution.
