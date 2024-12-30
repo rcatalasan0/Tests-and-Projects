@@ -1,3 +1,14 @@
+/*
+    Project Name: Palindrome / Palindrome Detector
+    Author: Rocco Catalasan
+    Date: 19 September, 2024
+    Description:
+        This is a really simple program, I'm not entirely sure why I
+        even made it to begin with. I think I heard something about it being
+        slightly difficult? I finished it completely within a span of a couple
+        of hours. This ended up being really fun to make.
+*/
+
 #include <iostream>
 #include <iomanip>
 #include <cstring>
@@ -12,7 +23,7 @@ int main() {
     getline(cin,word);              // grabbing word to input
 
     cout << word << " is ";
-    if(!palindromeChecker(word)) {      // wording/grammar for the output :P
+    if(!palindromeChecker(word)) {      // wording/grammar for the output
         cout << "not ";
     }
     cout << "a palindrome!" << endl;
@@ -34,7 +45,7 @@ bool palindromeChecker(string input) {
     for(int i=0; i < limit; i++) {
         if(cmpInput[i] != (cmpInput[input.length()-i-1])) {
             isAPalindrome = false;                  // don't wanna play with fire by including multiple return statements
-            break;                                  // this is just a safer bet :P
+            break;                                  // this is just a safer bet
         }
         // cout << input[i] << " vs. " << input[input.length()-i-1] << endl;
     }
